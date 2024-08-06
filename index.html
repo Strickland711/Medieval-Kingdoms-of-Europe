@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="中欧风云" content="StudyMC 最后的上帝粒子 开发 凡尘夕歌 制作">
+    <title>中欧风云</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/symbol.png" type="image/x-icon">
+</head>
+<body>
+    <div id="menu">
+        <img src="img/scene.png" alt="Opening Scene" class="fullscreen-bg">
+        <div class="menu-buttons">
+            <button id="start-game" class="menu-button">开始游戏</button>
+            <button id="show-rules" class="menu-button">规则说明</button>
+        </div>
+    </div>
+    <div id="game-interface" style="display: none;">
+        <img id="background" src="img/background.png" alt="Background" class="fullscreen-bg">
+        <div id="character-buttons" class="buttons">
+            <div class="button-container">
+                <button id="king">国王</button>
+                <span class="status" id="king-status">0</span>
+            </div>
+            <div class="button-container">
+                <button id="general">将军</button>
+                <span class="status" id="general-status">0</span>
+            </div>
+            <div class="button-container">
+                <button id="lord">领主</button>
+                <span class="status" id="lord-status">0</span>
+            </div>
+            <div class="button-container">
+                <button id="knight">骑士</button>
+                <span class="status" id="knight-status">0</span>
+            </div>
+            <div class="button-container">
+                <button id="assassin">刺客</button>
+                <span class="status" id="assassin-status">0</span>
+            </div>
+        </div>
+        <div id="resource-buttons" class="buttons">
+            <div class="button-container">
+                <button id="money">金钱</button>
+                <span class="status" id="money-status">0</span>
+            </div>
+            <div class="button-container">
+                <button id="credibility">公信力</button>
+                <span class="status" id="credibility-status">0</span>
+            </div>
+            <div class="button-container">
+                <button id="emtpocket">身无长物</button>
+                <span class="status" id="emtpocket-status">0</span>
+            </div>
+        </div>
+        <div id="computer-character-buttons" class="buttons">
+            <div class="button-container">
+                <button id="computer-king">国王</button>
+                <span class="status" id="computer-king-status">0</span>
+            </div>
+            <div class="button-container">
+                <button id="computer-general">将军</button>
+                <span class="status" id="computer-general-status">0</span>
+            </div>
+            <div class="button-container">
+                <button id="computer-lord">领主</button>
+                <span class="status" id="computer-lord-status">0</span>
+            </div>
+            <div class="button-container">
+                <button id="computer-knight">骑士</button>
+                <span class="status" id="computer-knight-status">0</span>
+            </div>
+            <div class="button-container">
+                <button id="computer-assassin">刺客</button>
+                <span class="status" id="computer-assassin-status">0</span>
+            </div>
+        </div>
+        <div id="computer-resource-buttons" class="buttons">
+            <div class="button-container">
+                <button id="computer-money">金钱</button>
+                <span class="status" id="computer-money-status">0</span>
+            </div>
+            <div class="button-container">
+                <button id="computer-credibility">公信力</button>
+                <span class="status" id="computer-credibility-status">0</span>
+            </div>
+            <div class="button-container">
+                <button id="computer-emtpocket">身无长物</button>
+                <span class="status" id="computer-emtpocket-status">0</span>
+            </div>
+        </div>
+        <div id="character-image-container"></div>
+        <div id="resource-image-container"></div>
+        <div id="computer-character-image-container"></div>
+        <div id="computer-resource-image-container"></div>
+
+        <div id="game-log"></div>
+        <button id="confirm-btn">确认出牌</button>
+        <button id="back-to-menu-game" class="menu-button">返回菜单</button>
+    </div>
+    <div id="game-over-screen" style="display: none;">
+        <h2 id="game-over-message"></h2>
+        <button id="restart-btn">重新开始</button>
+        <div id="win-background" class="game-over-background" style="display: none;"></div>
+        <div id="lose-background" class="game-over-background" style="display: none;"></div>
+    </div>
+    <div id="rules-interface" style="display: none;">
+        <img id="rules-background" src="img/rule.png" alt="Rules Background" class="fullscreen-bg">
+        <div id="rules-content" class="rules-content"></div>
+        <button id="back-to-menu-rules" class="menu-button">返回菜单</button>
+    </div>
+    <audio id="background-music" autoplay loop></audio>
+    <script src="ani.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
